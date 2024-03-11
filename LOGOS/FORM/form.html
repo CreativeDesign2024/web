@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de Servicios</title>
+  <link rel="stylesheet" href="form.css"> <!-- Enlace al archivo de estilos externo -->
+</head>
+<body>
+
+  <div class="container">
+    <h1>Solicitud de Servicios</h1>
+
+    <form action="form.php" method="post" id="formulario">
+
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label for="numero">Número de Contacto:</label>
+      <input type="tel" id="numero" name="numero" pattern="[0-9]{10}" placeholder="Ingrese un número de 10 dígitos" required>
+      <small>Formato: 1234567890</small>
+
+      <label for="servicio">Selecciona un Servicio:</label>
+      <select id="servicio" name="servicio" required>
+        <option value="logos">Logos</option>
+        <option value="cartel">Cartel Promocional</option>
+        <option value="invitacion">Invitación Digital</option>
+        <option value="paginaWeb">Página Web</option>
+      </select>
+
+      <input type="submit" value="Enviar">
+    </form>
+  </div>
+
+</body>
+</html>

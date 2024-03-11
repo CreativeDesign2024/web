@@ -1,0 +1,88 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #3498dbd2; /* Azul */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .container {
+    max-width: 400px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+  }
+  
+  h1 {
+    color: #2980b9; /* Azul oscuro */
+    text-align: center;
+  }
+  
+  form {
+    text-align: left;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+    color: #3498db; /* Azul */
+    font-weight: bold;
+  }
+  
+  input,
+  select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #3498db; /* Azul */
+    border-radius: 4px;
+    color: #3498db; /* Azul */
+    background-color: #ecf0f1; /* Gris claro */
+  }
+  
+  input[type="submit"] {
+    background-color: #2e48cc; /* Verde */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: auto;
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Transición de color de fondo */
+    animation: pulse 1.5s infinite; /* Efecto de pulsación infinita */
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #27ae60; /* Verde oscuro */
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  small {
+    color: #888;
+    display: block;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .container {
+      margin: 20px;
+    }
+  }
+  
